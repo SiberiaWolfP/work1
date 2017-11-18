@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>成功！</title>
+</head>
+<body>
+<h1>欢迎！</h1>
+<br>
+<a href="http://127.0.0.1:8000/logout/">退出</a>
+<br>
+<p>爬取数据如下：</p>
+    {% for passage in passages %}
+          <a>{{ passage.id }}</a><br>
+          <a>{{ passage.url }}</a><br>
+          <a>{{ passage.name }}</a><br>
+          <a>{{ passage.text }}</a><br>
+          <br>
+          <br>
+    {% endfor %}
+</body>
+</html>
